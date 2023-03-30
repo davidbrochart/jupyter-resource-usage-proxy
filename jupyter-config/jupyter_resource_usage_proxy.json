@@ -1,7 +1,6 @@
 {
   "ServerApp": {
     "jpserver_extensions": {
-      "jupyter_resource_usage": false,
       "jupyter_resource_usage_proxy": true
     }
   }

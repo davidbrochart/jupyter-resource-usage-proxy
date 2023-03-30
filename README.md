@@ -18,8 +18,8 @@ pip install jupyter_resource_usage
 pip install jupyter_resource_usage_proxy
 pip install jupyterlab
 
-# launch JupyterLab at http://127.0.0.1:8888 and proxy resource usage at http://127.0.0.1:8000
-jupyter lab --port=8888 --ResourceUsageProxyExtensionApp.proxy_url='http://127.0.0.1:8000'
+# launch JupyterLab at http://127.0.0.1:8888, deactivating the resource usage server extension and proxy resource usage at http://127.0.0.1:8000
+jupyter lab --port=8888 --ServerApp.jpserver_extensions="jupyter_resource_usage=False" --ResourceUsageProxyExtensionApp.proxy_url='http://127.0.0.1:8000'
 ```
 
 Resource usage should now be served from http://127.0.0.1:8000.

@@ -3,12 +3,12 @@
 In one terminal/environment:
 
 ```console
-pip install fps_uvicorn
-pip install fps_resource_usage
+pip install jupyverse-api
+pip install fps-resource-usage
 pip install fps-noauth
 
 # launch a terminal server at http://127.0.0.1:8000
-fps-uvicorn --port=8000 --no-open-browser
+jupyverse --port=8000
 ```
 
 In another terminal/environment:
